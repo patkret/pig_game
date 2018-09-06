@@ -66,7 +66,7 @@ function changePlayer() {
   document.getElementById('current-1').textContent = '0';
   firstPlayerPanel.classList.toggle('active');
   secondPlayerPanel.classList.toggle('active');
-  diceImg.style.display = 'none';
+  diceImg.classList.add('hidden');
 }
 
 function toggleRulesBlock() {
@@ -85,7 +85,7 @@ function init() {
   roundScore = 0;
   gameState = true;
   diceImg = document.querySelector('.dice');
-  diceImg.style.display = 'none';
+  diceImg.classList.add('hidden');
   document.getElementById('score-0').textContent = '0';
   document.getElementById('score-1').textContent = '0';
   document.getElementById('current-0').textContent = '0';
