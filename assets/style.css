@@ -179,6 +179,44 @@ i {
   grid-area: btn-back;
 }
 
-.hidden{ display: none; }
-.rules-list{ grid-area: rules-list;}
-.ion-ios-arrow-back{ margin-top: -7px;}
+.hidden { display: none; }
+.rules-list { grid-area: rules-list;}
+.ion-ios-arrow-back { margin-top: -7px;}
+.intro-block {
+position: absolute;
+z-index: 1000;
+background-color: #ffffff;
+height: 600px;
+width: 100%;
+display: grid;
+grid-template-columns: 2fr 4fr 1fr;
+grid-template-rows: 200px 2fr 1fr;
+grid-template-areas:
+". name name"
+"game-logo start ."
+". . ."
+
+}
+.game-logo{
+  opacity: 0.5;
+  grid-area: game-logo;
+  align-self: center;
+  justify-self: center;
+  padding-left: 30px;
+}
+.intro-block h1{
+  grid-area: name;
+  justify-self: start;
+  align-self: center;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 85px;
+  letter-spacing: 25px;
+
+}
+.intro-block .btn-start {
+  grid-area: start;
+  align-self: center;
+  justify-self: center;
+  font-size: 45px;
+  width: 100%;
+}

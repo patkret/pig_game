@@ -58,6 +58,9 @@ newBtn.addEventListener('click', function() {
   init();
   showButtons();
 });
+document.querySelector('.btn-start').addEventListener('click', function() {
+  document.querySelector('.intro-block').style.display = 'none';
+});
 
 function changePlayer() {
   roundScore = 0;
@@ -96,5 +99,4 @@ function init() {
   secondPlayerPanel.classList.remove('winner');
   firstPlayerPanel.classList.remove('active');
   secondPlayerPanel.classList.remove('active');
-
 }
