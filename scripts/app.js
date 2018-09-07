@@ -15,7 +15,6 @@ rollBtn.addEventListener('click', function() {
     //get the random number between 1 & 6
     var dice = Math.floor(Math.random() * 6) + 1 ;
     diceImg.classList.remove('hidden');
-    console.log('roll')
     diceImg.src = 'assets/images/dice-' + dice + '.png';
       if(dice !== 1) {
         roundScore += dice;
@@ -27,7 +26,6 @@ rollBtn.addEventListener('click', function() {
 
 holdBtn.addEventListener('click', function() {
   if(gameState){
-    console.log('hold')
     playersScores[activePlayer] += roundScore;
     document.querySelector('#score-' + activePlayer).textContent = playersScores[activePlayer];
 
